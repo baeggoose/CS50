@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    "hello.C": "cpp",
+    "helloboost.C": "cpp",
+    "animal.C": "cpp"
+  }
+}
