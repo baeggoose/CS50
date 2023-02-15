@@ -6,5 +6,5 @@ int main (void)
   float x = get_float("x: ");
   float y = get_float("y: ");
 
-  printf("x / y =%.1f\n", x / y);
+  printf("x / y =%.50f\n", x / y);
 }
