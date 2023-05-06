@@ -10,4 +10,5 @@ int main(void)
   names[3]= "DAVID";
 
   printf("%s\n", names[0]);
+  printf("%c%c%c%c%c%i\n", names[0][0], names[0][1], names[0][2], names[0][3], names[0][400]);
 }
