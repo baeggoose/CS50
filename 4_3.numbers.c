@@ -1,20 +1,36 @@
 #include <cs50.h>
 #include <stdio.h>
+#include <string.h>
+
+typedef struct
+{
+    string name;
+    string number;
+}
+person;
 
 int main(void)
 {
-  // numbers 배열 정의 및 값 입력
-  int numbers[] = {4, 8, 15, 16, 23, 42};
+    person people[4];
 
-  // 값 50 검색
-  for (int i = 0; i < 6; i++)
-  {
-    if (numbers[i] == 50)
+    people[0].name = "EMMA";
+    people[0].number = "617–555–0100";
+    people[1].name = "RODRIGO";
+    people[1].number = "617–555–0101";
+    people[2].name = "BRIAN";
+    people[2].number = "617–555–0102";
+    people[3].name = "DAVID";
+    people[3].number = "617–555–0103";
+
+    // EMMA 검색
+    for (int i = 0; i < 4; i++)
     {
-      printf("Found\n");
-      return 0;
+        if (strcmp(people[i].name, "EMMA") == 0)
+        {
+            printf("Found %s\n", people[i].number);
+            return 0;
+        }
     }
-  }
-  printf("Not found\n");
-  return 1;
+    printf("Not found\n");
+    return 1;
 }
